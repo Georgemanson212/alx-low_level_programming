@@ -1,21 +1,15 @@
 #include "holberton.h"
+
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
-	char h[] = "Holberton";
-	int m;
+	char *holberton;
 
-	m = 0;
-
-	while (m <= 8)
-	{
-		_putchar(h[m]);
-		m++;
-	}
-	_putchar('\n');
+	for (holberton = "Holberton\n"; *holberton != '\0'; ++holberton)
+		_putchar(*holberton);
 	return (0);
 }
